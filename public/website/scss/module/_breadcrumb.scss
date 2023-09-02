@@ -1,0 +1,38 @@
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+
+    li {
+        a {
+            font-family: 'Gilroy';
+            font-size: 17px;
+            line-height: 27px;
+            font-weight: 600;
+            color: $secondary-color;
+        }
+
+        &.breadcrumb-item {
+            &.active {
+                color: $body-font-color;
+            }
+        }
+    }
+}
+
+.shop-breadcrumb-section {
+    .breadcrumb {
+        li {
+            a {
+                font-family: 'Gilroy';
+                font-size: 20px;
+                line-height: 27px;
+            }
+
+            &.breadcrumb-item {
+                &.active {
+                    color: $body-font-color;
+                }
+            }
+        }
+    }
+}

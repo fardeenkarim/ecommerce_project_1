@@ -1,0 +1,73 @@
+.booking-table-form {
+    padding: 50px 50px 50px 35px;
+
+    @include respond(tab-port) {
+        padding: 50px;
+    }
+
+    @include respond(phone-large) {
+        padding: 30px;
+    }
+
+    .booking-person-wrapper-select-nav {
+        width: 100%;
+
+        .form-group {
+            position: relative;
+
+            .booking-person-wrapper-icon {
+                position: absolute;
+                top: 8px;
+                right: 30px;
+            }
+        }
+    }
+
+    .form-row {
+        .booking-input-date-wrapper {
+            .form-group {
+                input {
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: $body-font-color;
+                    background-color: #f7f7fa;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .booking-input-time-wrapper {
+            .form-group {
+                input {
+                    padding: 15px 30px;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: $body-font-color;
+                    background-color: #f7f7fa;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .booking-table-btn {
+        @include respond(tab-port) {
+            width: 100%;
+
+            .btn-primary {
+                width: 100%;
+            }
+        }
+    }
+}

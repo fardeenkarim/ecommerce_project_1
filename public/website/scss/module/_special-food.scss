@@ -1,0 +1,67 @@
+.special-food-items {
+    @include respond(tab-port) {
+        margin-bottom: 100px;
+    }
+
+    @include respond(phone-large) {
+        margin-bottom: 20px;
+    }
+
+    .special-food-item {
+        .product-card-wrapper {
+            padding-top: 85px;
+
+            .card {
+                margin-bottom: 0;
+
+                @include respond(phone-large) {
+                    margin-bottom: 30px;
+                }
+
+                .card-img {
+                    width: 100%;
+
+                    .card-price {
+                        bottom: calc(10% - 25px);
+                        right: calc(10% - -10px);
+                    }
+                }
+
+                #special-card-img {
+                    margin-left: 47px;
+
+                    .card-price {
+                        bottom: calc(10% - 25px);
+                        right: calc(10% - -40px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.special-food-info {
+
+    margin-left: 8.33%;
+
+    @include respond(tab-port) {
+        text-align: center;
+        margin-left: 0;
+
+        h2 {
+            font-size: 38px;
+        }
+    }
+
+    @include respond(phone-large) {
+        h2 {
+            font-size: 30px;
+            line-height: 44px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+}

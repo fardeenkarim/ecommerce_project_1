@@ -1,0 +1,30 @@
+.newsletter-form {
+    .form-inline {
+        .input-group {
+            width: 100%;
+            position: relative;
+            input {
+                width: 100%;
+                z-index: 1;
+                &.form-control {
+                    padding: 15px 30px;
+                    border-radius: 30px;
+                    padding-right: 36%;
+                    background-color: #F1FBF1;
+                    border: none;
+                    &:focus {
+                        box-shadow:  none;
+                        outline: none;
+                    }
+                }
+            }
+
+            .subscribe-btn {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 2;
+            }
+        }
+    }
+}

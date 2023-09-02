@@ -1,0 +1,131 @@
+.featured-section {
+    background-image: url(../images/featured-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 200px 0px;
+
+    @include respond(tab-port) {
+        padding: 0 0 50px;
+    }
+}
+
+.booking-form-section {
+    padding: 85px 0 200px;
+
+    @include respond(tab-port) {
+        padding: 0px 0 100px;
+        margin-top: -15px;
+    }
+
+    @include respond(phone-large) {
+        padding: 0px 0 50px;
+    }
+}
+
+.special-food-section {
+    background-image: url(../images/special-food-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 200px 0px;
+
+    @include respond(tab-port) {
+        padding: 100px 0;
+    }
+
+    @include respond(phone-large) {
+        padding: 50px 0;
+    }
+}
+
+.newsletter-section {
+    padding: 200px 0;
+
+    @include respond(tab-port) {
+        padding: 70px 0 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 20px 0 50px;
+    }
+}
+
+//home pages blog section
+.blog-section {
+
+    .blog-info {
+
+        h2 {
+            margin: 5px 0px 20px;
+        }
+
+        @include respond(tab-port) {
+            h2 {
+                font-size: 38px;
+            }
+        }
+
+        @include respond(phone-large) {
+
+            h2 {
+                font-size: 30px;
+                line-height: 44px;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+
+        P {
+            padding-bottom: 75px;
+        }
+    }
+}
+
+.testimonial-section {
+    background-image: url(../images/testimonial-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 200px 0;
+
+    @include respond(tab-port) {
+        padding: 70px 0 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 20px 0 50px;
+    }
+
+    .testimonial-info {
+        h2 {
+            margin: 5px 0px 70px;
+        }
+
+        @include respond(tab-port) {
+
+            h2 {
+                font-size: 38px;
+                margin: 5px 0px 50px;
+            }
+        }
+
+        @include respond(phone-large) {
+            h2 {
+                margin: 5px 0px 30px;
+                font-size: 30px;
+                line-height: 44px;
+            }
+
+            h3 {
+                font-size: 30px;
+            }
+        }
+
+        P {
+            padding-bottom: 75px;
+        }
+    }
+}

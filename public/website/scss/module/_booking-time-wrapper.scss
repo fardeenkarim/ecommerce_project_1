@@ -1,0 +1,69 @@
+.booking-time-wrapper {
+    display: flex;
+    align-items: center;
+
+    @include respond(phone-large) {
+        margin-bottom: 30px;
+    }
+
+    img {
+        margin-right: 20px;
+    }
+
+    .booking-input-time-wrapper {
+        width: 100%;
+
+        .form-group {
+            margin-bottom: 0;
+
+            input {
+                padding: 7px 15px;
+                border-radius: 20px;
+                border: 0.5px solid #cccfdc;
+                color: $body-font-color;
+                display: block;
+                width: 100%;
+                font-size: 15px;
+                font-weight: 400;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.daterangepicker {
+    font-family: 'Gilroy';
+    border: 0.5px solid #cccfdc;
+
+    .calendar-table {
+        th {
+            color: $body-font-color;
+        }
+
+        td {
+            color: $body-font-color;
+
+            &.active {
+                color: $body-background-color;
+                background-color: $primary-color;
+
+                &:hover {
+                    color: $body-background-color;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .drp-buttons {
+        border-top: 0.5px solid #cccfdc;
+
+        .btn {
+            padding: 4px 19px;
+            border-radius: 30px;
+        }
+    }
+}

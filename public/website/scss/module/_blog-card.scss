@@ -1,0 +1,37 @@
+.single-blog-item {
+    @include respond(tab-port) {
+        margin-bottom: 30px;
+    }
+
+    .card {
+        img {
+            border-radius: 15px 15px 0px 0px;
+
+        }
+
+        .card-body {
+            padding: 25px;
+
+            h4 {
+                margin: 10px 0;
+                line-height: 27px;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 22px;
+                font-weight: 400;
+            }
+
+            a {
+                display: block;
+                padding-top: 10px;
+                color: $primary-color;
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

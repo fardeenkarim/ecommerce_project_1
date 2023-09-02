@@ -1,0 +1,92 @@
+.shop-version-one-breadcrumb-section {
+    background-image: url(../images/shop-version-one-breadcrumb-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 300px;
+
+    @include respond(ipad-pro) {
+        padding: 100px 0;
+    }
+
+    @include respond(tab-port) {
+        padding: 70px 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 40px 0;
+    }
+
+    .breadcrumb-content {
+        @include respond(tab-port) {
+            padding: 0px 50px;
+
+            h2 {
+                font-size: 38px;
+                line-height: 44px;
+            }
+        }
+
+        @include respond(phone-large) {
+            padding: 0;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+.shop-version-one-section {
+
+    .shop-version-one-product-wrapper {
+        padding: 50px 0 200px;
+
+        @include respond(tab-port) {
+            padding: 50px 0 100px;
+        }
+
+        @include respond(phone-large) {
+            padding: 50px 0;
+        }
+
+        .shop-version-one-single-product-item {
+            .card {
+                img {
+                    border-radius: 10px 10px 0 0;
+                }
+
+                .card-body {
+                    .product-title-price {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        span {
+                            color: $primary-color;
+                            font-size: 20px;
+                            line-height: 27px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            margin-top: 70px;
+
+            @include respond(tab-port) {
+                margin-top: 50px;
+            }
+
+            @include respond(phone-large) {
+                margin-top: 30px;
+            }
+        }
+    }
+}

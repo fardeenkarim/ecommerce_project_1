@@ -1,0 +1,56 @@
+//blog version one pages 
+.blog-version-one-breadcrumb-section {
+    background-image: url(../images/menu-bg-one.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 150px 0 300px;
+
+    @include respond(ipad-pro) {
+        padding: 100px 0;
+    }
+
+    @include respond(tab-port) {
+        padding: 70px 100px;
+    }
+
+    @include respond(phone-large) {
+        padding: 40px 0;
+    }
+
+    .breadcrumb-content {
+        @include respond(tab-port) {
+            padding: 0px 50px;
+
+            h2 {
+                font-size: 38px;
+                line-height: 44px;
+            }
+        }
+
+        @include respond(phone-large) {
+            padding: 0;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+
+}
+
+.blog-version-one-wrapper {
+    padding-bottom: 200px;
+
+    @include respond(tab-port) {
+        padding-bottom: 100px;
+    }
+
+    @include respond(phone-large) {
+        padding-bottom: 50px;
+    }
+}

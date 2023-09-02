@@ -1,0 +1,57 @@
+.booking-person-wrapper {
+    display: flex;
+    align-items: center;
+
+    @include respond(tab-port) {
+        margin-bottom: 30px;
+    }
+
+    img {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 15px;
+        }
+    }
+
+    .booking-person-wrapper-select-nav {
+        width: 100%;
+
+        .form-group {
+            position: relative;
+            margin-bottom: 0;
+
+            .booking-person-wrapper-icon {
+                position: absolute;
+                top: 5px;
+                right: 0px;
+            }
+
+            .select2-container--default {
+                width: 100% !important;
+
+                ul {
+                    li {
+                        padding-left: 10px;
+                        font-size: 14px;
+                        border-bottom: 0.5px solid #cccfdc;
+
+                        &:last-child {
+                            border-bottom: none;
+                            border-bottom-left-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                        }
+                    }
+                }
+
+                .select2-selection--single {
+                    background-color: #ffffff;
+                    border-radius: 20px !important;
+                    border: 0.5px solid #cccfdc !important;
+                    padding-left: 15px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+}

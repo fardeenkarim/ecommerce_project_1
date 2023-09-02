@@ -1,0 +1,18 @@
+.menu-item-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+
+    @include respond (phone-large) {
+        margin-top: 50px;
+    }
+
+    .menu-item-meta-list {
+        text-align: center;
+
+        span {
+            display: block;
+        }
+    }
+}

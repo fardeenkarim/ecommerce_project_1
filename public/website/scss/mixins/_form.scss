@@ -1,0 +1,15 @@
+@mixin form-control {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 300;
+    color: $body-font-color;
+    background-color: #f7f7fa;
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        background-color: #f7f7fa;
+    }
+}
